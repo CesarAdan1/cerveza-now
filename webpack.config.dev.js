@@ -5,7 +5,7 @@ module.exports = merge(baseConfig, {
 
   mode: "development",
   devServer: {
-    port: 8000,
+    port: 8002,
     open: true,
     overlay: {
       warnings: true,

@@ -59,7 +59,7 @@ module.exports = {
             filename: "index.html"
         }),
        new FaviconWebpackPlugin({
-                logo: './src/public/pokeball.png',
+                logo: './src/public/zxventures.png',
                 mode: 'webapp',
                 cache: true
             }),
