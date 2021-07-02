@@ -3,7 +3,7 @@ import c3 from 'c3';
 import 'c3/c3.css';
 
 const Graphic = (props) => {
-    const { baseName, date, MXNValue, currencies, curValues } = props;
+    const { MXNValue, currencies, curValues } = props;
 
       const dataGraph = [
         ["MXN", MXNValue],
