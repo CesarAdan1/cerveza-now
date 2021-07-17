@@ -9,6 +9,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3) CSS
 4) Fixer API visit: https://fixer.io/documentation
 
+## Order of the graphs
+
+blue: MXN
+orange: USD
+green: GBP
+red: EUR
+magenta: RUB   
+
 # Steps
 1. Get a Free Fixer Access Token
 

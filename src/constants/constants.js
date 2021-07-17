@@ -20,9 +20,9 @@ export const getData = (plotConfig) => {
  if (Array.isArray(plotConfig)) {
   const countriesInd = ["MXN", "USD", "GBP", "EUR","RUB"]
    return plotConfig.reduce((sum, { countries, maxValue }, 
-    countriesInd = {"MXN" : "MXN", "USD" : "USD", "GBP": "GBP", "EUR": "EUR", "RUB": "RUB"}
+    countriesInd 
       )   => {
-     const data = [`${Object.values(countriesInd)}`];
+     const data = [`${countriesInd}`];
      for (let i = 0; i < countries; i++) {
        data.push((Math.random() * maxValue));
 
