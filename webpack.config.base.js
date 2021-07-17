@@ -4,6 +4,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const FaviconWebpackPlugin = require('favicons-webpack-plugin');
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const Dotenv = require('dotenv-webpack');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
     context: __dirname,
@@ -58,6 +59,11 @@ module.exports = {
             template: "./src/public/index.html",
             filename: "index.html"
         }),
+        new ESLintPlugin({
+            extensions: ['js', 'jsx'],
+            emitWarning: true,
+            emitError: false,
+          }),
        new FaviconWebpackPlugin({
                 logo: './src/public/zxventures.png',
                 mode: 'webapp',

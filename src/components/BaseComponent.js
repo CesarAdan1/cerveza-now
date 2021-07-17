@@ -1,20 +1,16 @@
 import React from "react";
-import getSymbolFromCurrency from "currency-symbol-map";
 import { mexicoFlag } from '../constants';
 
 const BaseCurrency = (props) => {
-    const { date, currencyValue, currencyDefault } = props;
-    const today = new Date(date).toUTCString();
+    const { date, currencyDefault } = props;
 
     return (
         <div className="main-view--1">
             <span className="main-view--mxn">
-            <span className="main-view--cur">Currency Reference</span>
-            <img src={mexicoFlag} width="20" height="14" />
-            {`${" "}${currencyValue} ${" "}`}{" "}
+                <span style={{ margin: '0 10px' }}>{date}</span>
                 <span className="main-view--cu">
-                    {" "} con referencia a {" "}
-                    <span className="main-view--cude">{`${currencyDefault} EUR`}</span>
+                    {" "}{""}{"1 Peso mexicano "} <img src={mexicoFlag} width="20" height="14" />
+                    <span className="main-view--cude"><span>{"= "}</span>{`${currencyDefault} EUR`}</span>
                 </span>
             </span>
         </div>

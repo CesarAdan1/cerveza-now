@@ -23,8 +23,24 @@
     margin-right: 5px;
 }
 
+.main-view--2-sect{
+    display: flex;
+}
+
 .main-view--cont {
     margin-top: 10px;
+}
+
+.main-view--2-sect {
+    margin: 0 10px
+}
+
+.marginL {
+    margin-right: 5px;
+}
+
+.marginT {
+    margin-left: 10px;
 }
 
 @media (min-width: 700px) {
